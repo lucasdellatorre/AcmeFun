@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #030C13;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.telaCliente.AcessarEntretenimento">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #1F282F;">
+         <children>
+            <Label layoutX="40.0" layoutY="37.0" text="ACME" textFill="WHITE">
+               <font>
+                  <Font name="Carlito Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="37.0" text="FUN" textFill="#207cbd">
+               <font>
+                  <Font name="Carlito Bold" size="24.0" />
+               </font>
+            </Label>
+            <VBox layoutY="93.0" prefHeight="507.0" prefWidth="200.0">
+               <children>
+                  <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#mudarParaInicio" prefHeight="50.0" prefWidth="200.0" ripplerFill="#bcb8b8" text="Início" textFill="#d9e1f5">
+                     <font>
+                        <Font name="Carlito Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#mudarParaConsultarCatalogo" prefHeight="50.0" prefWidth="200.0" text="Consultar Catálogo" textFill="#d9e1f5">
+                     <font>
+                        <Font name="Carlito Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" onAction="#mudarParaAcessarEntretenimento" prefHeight="50.0" prefWidth="200.0" text="Acessar Entretenimento" textFill="#d9e1f5">
+                     <font>
+                        <Font name="Carlito Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" onAction="#mudarParaConsultarCobranca" prefHeight="50.0" prefWidth="200.0" text="Consultar Cobrança Mensal" textFill="#d9e1f5">
+                     <font>
+                        <Font name="Carlito Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="sairBtn" alignment="BASELINE_LEFT" onAction="#terminar" prefHeight="50.0" prefWidth="200.0" text="Sair" textFill="#d9e1f5">
+                     <font>
+                        <Font name="Carlito Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="140.0" top="245.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Label layoutX="328.0" layoutY="49.0" prefHeight="40.0" prefWidth="311.0" text="Acessar Entretenimento" textFill="#e8e4e4">
+         <font>
+            <Font name="Carlito Bold" size="31.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="9.0" layoutX="328.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" width="311.0" />
+      <JFXButton fx:id="acessarBtn" layoutX="600.0" layoutY="152.0" onAction="#acessar" prefHeight="28.0" prefWidth="78.0" style="-fx-background-color: #1e90ff; -fx-background-radius: 30;" text="Acessar" textFill="#362828" />
+      <TextField fx:id="selecionarTf" layoutX="258.0" layoutY="152.0" prefHeight="34.0" prefWidth="322.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+   </children>
+</AnchorPane>

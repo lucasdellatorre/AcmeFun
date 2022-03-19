@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #030C13;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.telaAdm.HomeAdm">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #1F282F;">
+         <children>
+            <Label layoutX="40.0" layoutY="37.0" text="ACME" textFill="WHITE">
+               <font>
+                  <Font name="Carlito Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="37.0" text="FUN" textFill="#207cbd">
+               <font>
+                  <Font name="Carlito Bold" size="24.0" />
+               </font>
+            </Label>
+            <VBox layoutY="93.0" prefHeight="507.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="inicioBtn" alignment="BASELINE_LEFT" onAction="#mudarParaInicio" prefHeight="50.0" prefWidth="200.0" text="Início" textFill="#d9e1f5">
+                     <font>
+                        <Font name="Carlito Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="cadastrarClientesBtn" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#mudarParaCadastrarClientes" prefHeight="50.0" prefWidth="200.0" text="Cadastrar Clientes" textFill="#d9e1f5">
+                     <font>
+                        <Font name="Carlito Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="cadastrarEntretenimentoBtn" alignment="BASELINE_LEFT" onAction="#mudarParaCadastrarEntretenimento" prefHeight="50.0" prefWidth="200.0" text="Cadastrar Entretenimento" textFill="#d9e1f5">
+                     <font>
+                        <Font name="Carlito Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="consultarAcessosMensaisBtn" alignment="BASELINE_LEFT" onAction="#mudarParaConsultarAcessosMensais" prefHeight="50.0" prefWidth="200.0" text="Consultar Acessos Mensais" textFill="#d9e1f5">
+                     <font>
+                        <Font name="Carlito Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="simularCargaDadosBtn" alignment="BASELINE_LEFT" onAction="#mudarParaSimularCargaDados" prefHeight="50.0" prefWidth="200.0" text="Simular Carga de Dados" textFill="#d9e1f5">
+                     <font>
+                        <Font name="Carlito Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" onAction="#mudarParaSimularCargaImdb" prefHeight="50.0" prefWidth="200.0" text="Simular Carga Imdb" textFill="#d9e1f5">
+                     <font>
+                        <Font name="Carlito Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="sairBtn" alignment="BASELINE_LEFT" onAction="#terminar" prefHeight="50.0" prefWidth="200.0" text="Sair" textFill="#d9e1f5">
+                     <font>
+                        <Font name="Carlito Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="140.0" top="170.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Label layoutX="38.0" layoutY="60.0" text="Administracao" textFill="WHITE">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
